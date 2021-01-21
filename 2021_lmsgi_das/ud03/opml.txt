@@ -1,0 +1,3 @@
+Ejemplo de uso y utilizacion de OPML
+Se utiliza para Exporar hacer copias de seguridad o 
+compartir una lista de blogs a los que estamos suscritos mediante un RSS

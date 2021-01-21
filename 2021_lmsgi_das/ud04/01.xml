@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mail>
+	<remitente></remitente>
+	<destinatario></destinatario>
+	<fecha></fecha>
+	<asunto></asunto>
+	<mensaje></mensaje>
+	<ficherosAdjuntos>
+		<nombreFichero></nombreFichero>
+		<tipoMIME></tipoMIME>
+	</ficherosAdjuntos>
+</mail>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0">
+<channel>
+	<title>LMSGI-RSS-David Aparicio Sir "Apa"</title>
+	<link>http://192.168.2.105</link>
+	<description>RSS sobre lo trabajado en el modulo de lenguaje de marcas en el tema de HTML5 y CSS3</description>
+	<skipDays>Saturday</skipDays>
+	<skipDays>Sunday</skipDays>
+	<skipHours>0</skipHours>
+	<skipHours>1</skipHours>
+	<skipHours>2</skipHours>
+	<skipHours>3</skipHours>
+	<skipHours>4</skipHours>
+	<skipHours>5</skipHours>
+	<skipHours>6</skipHours>
+	<skipHours>7</skipHours>
+	<skipHours>8</skipHours>
+	<item>
+		<title>Practica 10 </title>
+		<author>David Aparicio "Apa"</author>
+		<link>http://192.168.2.105/ud02/10/index.html</link>
+		<description>Tablas editadas para tener color y hover</description>
+		<enclosure url="http://192.168.2.105/ud02/10/img/practica10.jpg"></enclosure>
+		<pubdate>Tue,19 Jan 2021 13:30:00 GMT</pubdate>
+	</item>
+	<item>
+		<title>Practica 11</title>
+		<author>David Aparicio "Apa"</author>
+		<link>http://192.168.2.105/ud02/11/index.html</link>
+		<description>Pagina web sobre el principito para probar los diferentes estilos de position en CSS</description>
+		<enclosure url="http://192.168.2.105/ud02/11/images/practica11.jpg"></enclosure>
+		<pubdate>Tue,19 Jan 2021 13:30:00 GMT</pubdate>
+	</item>
+	<item>
+		<title>Practica 12</title>
+		<author>David Aparicio "Apa"</author>
+		<link>http://192.168.2.105/ud02/12/index.html</link>
+		<description>Practica de hacer un curriculum tambien para aprender a poner iconos e importar fuentes nuevas</description>
+		<enclosure url="http://192.168.2.105/ud02/12/img/practica12.jpg"></enclosure>
+		<pubdate>Tue,19 Jan 2021 13:30:00 GMT</pubdate>
+	</item>
+	<item>
+		<title>Practica 13</title>
+		<author>David Aparicio "Apa"</author>
+		<link>http://192.168.2.105/ud02/13/index.html</link>
+		<description>Practica noticias</description>
+		<enclosure url="http://192.168.2.105/ud02/13/images/practica13.jpg"></enclosure>
+		<pubdate>Tue,19 Jan 2021 13:30:00 GMT</pubdate>
+	</item>
+	<item>
+		<title>Practica 14</title>
+		<author>David Aparicio "Apa"</author>
+		<link>http://192.168.2.105/ud02/14/index.html</link>
+		<description>Practica final </description>
+		<enclosure url="http://192.168.2.105/ud02/14/img/practica14.jpg"></enclosure>
+		<pubdate>Tue,19 Jan 2021 13:30:00 GMT</pubdate>
+	</item>
+	<lastBuildDate>Tue,19 Jan 2021 13:30:00 GMT</lastBuildDate>
+</channel>
+</rss>

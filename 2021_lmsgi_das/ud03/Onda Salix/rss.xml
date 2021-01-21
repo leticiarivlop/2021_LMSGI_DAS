@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+		<title>Radio Salix:IES los Sauces</title>
+		<link>http://ieslossauces.centros.educa.jcyl.es/sitio/index.cgi?wid_seccion=51</link>
+		<description>
+			<![CDATA[
+				<h1>Radio Salix:la radio de IES los Sauces</h1>
+			]]>
+		</description>
+		<item>
+			<title>Nº1 - PARA QUE TE ENTERES - ONDA SALIX</title>
+			<link>https://www.mixcloud.com/ondasalix/no1-para-que-te-enteres-onda-salix/</link>
+			<description>
+			<![CDATA[
+				<h1>https://www.mixcloud.com/ondasalix/no1-para-que-te-enteres-onda-salix/</h1>
+				Onda Salix estrena su programa "Para que te enteres", con buena música y buen rollo. Podrás escuchar 3 secciones de lo más interesante:
+				- En ¿Cuál es el siguiente número? La maravillosa sucesión de Fibonacci
+				- En "Unos y Ceros", ¿es lo mismo wifi que internet?
+				- Día especial 25 N. ¿Qué sabes y qué opinas de ese día? Yolanda, trabajadora social de la Cruz Roja te saca de dudas.
+				- El proyecto Erasmus K3 en el que el centro está participando.
+			]]>
+			</description>
+		</item>
+		<item>
+			<title>Nº2 - PARA QUE TE ENTERES - ONDA SALIX</title>
+			<link>https://www.mixcloud.com/ondasalix/no2-para-que-te-enteres-onda-salix/</link>
+			<description>
+			<![CDATA[
+				<h1>Nº2 - PARA QUE TE ENTERES - ONDA SALIX</h1>
+				Una nueva edición del programa "Para Que Te Enteres" de Onda Salix, la radio del IES "LOS SAUCES".
+				Noticias, mitología griega, matemáticas, aula empresa, unos y ceros, paloteo...
+			]]>
+			</description>
+		</item>
+		<item>
+			<title>Nº3. para que te enteres</title>
+			<link>https://www.ivoox.com/n-3-para-te-enteres-audios-mp3_rf_62208741_1.html</link>
+			<description>
+			<![CDATA[
+				<h1>Nº3. para que te enteres</h1>
+				En esta edición de para que te enteres...
+				Noticias
+				Mitología
+			]]>
+			</description>
+		</item>
+		<item>
+			<title>Nº4. para que te enteres</title>
+			<link>https://www.ivoox.com/n-3-para-te-enteres-audios-mp3_rf_62208741_1.html</link>
+			<description>
+			<![CDATA[
+				<h1>Nº4. para que te enteres</h1>
+				<p>Cerramos el trimestre con la emisión en directo del programa cargado de nuevas secciones, 
+				balance del año de la directora del centro, villancicos y también siguen las secciones de siempre. 
+				No te lo pierdas, en televisión Benavente no se lo han perdido.</p>
+				
+			<iframe id='audio_62853064' frameborder='0' allowfullscreen='' scrolling='no' height='200' style='border:1px solid #EEE; box-sizing:border-box; width:100%;' src="https://www.ivoox.com/player_ej_62853064_4_1.html?c1=ff6600"></iframe>
+			]]>
+			</description>
+		</item>
+	</channel>
+</rss>
