@@ -1,0 +1,38 @@
+
+img{}
+div{
+	width:300px;
+	height:300px;
+	border-color:black;
+	border-style:solid;
+	display:inline-block;
+	margin:10px;
+	background-size:33%;
+	background-repeat:no-repeat;
+}
+/*Cubo 1*/
+div:nth-child(1){
+	background-image:url('../images/punto.png');
+	background-position:center;
+}
+/*Cubo 2*/
+div:nth-child(2){	
+	background-image:url('../images/punto.png'),url('../images/punto.png');
+	background-position:left top,right bottom;
+}
+div:nth-child(3){	
+	background-image:url('../images/punto.png'),url('../images/punto.png'),url('../images/punto.png');
+	background-position:left top,center,right bottom;
+}
+div:nth-child(4){	
+	background-image:url('../images/punto.png'),url('../images/punto.png'),url('../images/punto.png'),url('../images/punto.png');
+	background-position:left top,left bottom,right bottom,right top;
+}
+div:nth-child(5){	
+	background-image:url('../images/punto.png'),url('../images/punto.png'),url('../images/punto.png'),url('../images/punto.png'),url('../images/punto.png');
+	background-position:left top,left bottom,right bottom,right top,center;
+}
+div:nth-child(6){	
+	background-image:url('../images/punto.png'),url('../images/punto.png'),url('../images/punto.png'),url('../images/punto.png'),url('../images/punto.png'),url('../images/punto.png');
+	background-position:left top,left bottom,left center,right bottom,right top,right center;
+}

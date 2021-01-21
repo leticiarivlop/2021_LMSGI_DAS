@@ -1,0 +1,90 @@
+﻿
+/* 
+    Created on : 05-dic-2020
+    Author     : David Aparicio Sir>
+   
+*/
+@font-face{
+	font-family:font-awesome;
+	src:url(../fonts/fontawesome/webfonts/fa-solid-900.woff);
+}
+* {
+  box-sizing: border-box;
+}
+li{
+	list-style:none;
+	
+}
+.topmenu .active:before{
+	content:"\f015";
+	font-family:font-awesome;
+	padding:5px;
+}
+.topmenu .news:before{
+	content:"\f1ea";
+	font-family:font-awesome;
+	padding:5px;
+}
+.topmenu .contact:before{
+	content:"\f007";
+	font-family:font-awesome;
+	padding:5px;
+}
+.topmenu .about:before{
+	content:"\f128";
+	font-family:font-awesome;
+	padding:5px;
+}
+body {
+  font-family: comic sans MS;
+}
+nav li{
+	display:inline-block;;
+	
+}
+
+/* Style the header */
+.topmenu {
+  background-color: grey;
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+li a{
+	color:black;
+}
+.clearfix:after{
+	content: "";
+  display: table;
+  clear: both;
+}
+.column{
+	float:left;
+	padding:8px;
+}
+.column .sidemenu{
+	width:25%;
+	background-color:grey;
+	color:white;
+}
+.column.content{
+	width:75%;
+}
+.column.content .header{
+	color:#990000;
+	border:1px solid #990000;
+}
+h2{
+	color:#990000;
+}
+
+
+/* Style the footer */
+footer {
+  padding: 10px;
+  text-align: center;
+  color: grey
+}
+
+

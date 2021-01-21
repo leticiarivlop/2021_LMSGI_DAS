@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+	<html lang="es">
+		<head>
+			<title>HTML 04 David Aparicio</title>
+			<meta charset="utf-8">
+			
+		</head>
+		<body>
+			<h1 style="text-align:center">HOJA DE INSCRIPCIÓN</h1>
+			<br>
+			<h2 style="text-align:center">EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h2>
+			<form action="registro.php">
+				<fieldset style="background-color:#BBBBBB">
+					<legend style="border:1px solid black;background-color:white">Datos Personales</legend>
+					<table>
+						<tr>
+							<td>
+								<label for="LblNombre">Nombre:</label>
+							</td>
+							<td>
+								<label for="LblApellidos">Apellidos:</label>
+							</td>
+							<td>
+								<label for="LblDNI">DNI:</label>
+							</td>
+							<td>
+								<label for="LblTel">Telefono:</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input name="nombre" type="text" value="" placeholder="Introduce tu nombre" id="LblNombre">
+							</td>
+							<td>
+								<input name="apellidos" type="text" value="" placeholder="Intoduce tus apellidos" id="LblApellidos">
+							</td>
+							<td>
+								<input name="DNI" type="text" value="" placeholder="Introduce tu DNI" id="LblDNI">
+							</td>
+							<td>
+								<input name="Telefono" type="tel" value="" id="LblTel" placeholder="000000000" pattern="[0-9]{9}">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="LblLocalidadN">Localidad de Nacimiento:</label>
+							</td>
+							<td>
+								<label for="LblProvincia">Provincia:</label>
+							</td>
+							<td colspan="2">
+								<label for="LblFechaN">Fecha de Nacimiento</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input name="LocalidadN" type="text" value="" id="LblLocalidadN">
+							</td>
+							<td>
+								<select id="LblProvincia">
+									<option value="Avila">Avila</option>
+									<option value="Burgos">Burgos</option>
+									<option value="Leon">León</option>
+									<option value="Palencia">Palencia</option>
+									<option value="Salamanca">Salamanca</option>
+									<option value="Segovia">Segovia</option>
+									<option value="Soria">Soria</option>
+									<option value="Valladolid">Valladolid</option>
+									<option value="Zamora">Zamora</option>
+								</select>
+							</td>
+							<td colspan="2">
+								<input type="date" name="Fecha" id="LblFechaN" min="1960-01-02">
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<label for="LblDireccion">Dirección</label>
+							</td>
+						
+							<td colspan="2">
+								<label for="LblCP">Código Postal</label>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<input type="text" name="Direccion" id="LblDireccion">
+							</td>
+							<td colspan="2">
+								<input type="number" name="Codigo Postal" id="LblCP" min="00000" max="99999">
+							</td>
+						</tr>
+					</table>
+				</fieldset>
+				<fieldset style="background-color:rgb(241,194,156)">
+					<legend style="border:1px solid black;background-color:white">Forma de Acceso</legend>
+					<ul style="list-style:none;">
+						<li>
+							<label for="LblDirecto">
+								<input type="radio" name="Acceso" id="LblDirecto">
+								Directo
+							</label> 
+							<ul style="list-style:none;">
+								<li>
+								<label for="LblBach_Mod">
+									<input type="radio" name="Directo" id="LblBach_Mod">
+									Bachillerato modalidad
+								</label>
+								<input type="text" value="">
+								</li>
+								<li>
+									<label for="LblBach_Exp">
+										<input type="radio" name="Directo" id="LblBach_Exp">
+										Bachillerato experimental
+									</label>
+								</li>
+								<li>
+									<label for="LblCou">
+										<input type="radio" name="Directo" id="LblCou">
+										COU Opción
+									</label>
+									<input type="text" value="">
+								</li>
+								<li>
+									<label for="LblTecnico">
+										<input type="radio" name="Directo" id="LblTecnico">
+										Título de Técnico(FPGM)
+									</label>
+									<input type="text" value="">
+								</li>
+								<li>
+									<label for="LblUniversidad">
+										<input type="radio" name="Directo" id="LblUniversidad">
+										Titulacción Universitaria
+									</label>
+									<input type="text" value="">
+								</li>
+								<li>
+									<label for="LblOtros">
+										<input type="radio" name="Directo" id="LblOtros">
+										Otros (especifique)
+									</label>
+									<input type="text" value="">
+								</li>
+							</ul>
+							
+						</li>
+						<li>
+							<label for="LblPrueba_Libre">
+								<input type="radio" name="Acceso" id="LblPrueba_Libre">
+								Prueba Libre
+							</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset style="background-color: rgb(182,126,126)">
+					<legend style="border:1px solid black;background-color:white"> Documentos Adjuntados</legend>
+					<p>
+					<label for="LblFotocopia">
+						<input type="checkbox" name="Documento1" id="LblFotocopia">
+						Fotocopia DNI
+					</label>
+					<label for="LblCertificado">
+						<input type="checkbox" name="Documento2" id="LblCertificado">
+						Certificado Academico
+					</label>
+					<br>
+					<label for="LblOtros_Docs">
+						<input type="checkbox" name="Documento3" id="LblOtros_Docs">
+						Otros documentos (especifique) 
+					</label>
+					<input type="text" value="">
+					</p>
+				</fieldset>
+				<input type="submit" value="Enviar solicitud">
+			</form>
+		</body>
+</html>

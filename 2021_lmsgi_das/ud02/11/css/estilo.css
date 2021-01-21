@@ -1,0 +1,135 @@
+﻿
+/* 
+    Created on : 26-Nov-2020, 
+    Author     : David Aparicio Sir
+   
+*/
+*{
+	box-sizing:border-box;
+	font-family:calibri,arial,sans-serif;
+}
+body, div, p, h1, img{
+	margin:0px;
+	padding:0px;
+}
+body{
+	background-image:url(../images/Le_petit_prince.png);
+	background-position:top right;
+	margin-right:250px;
+	background-repeat:no-repeat;
+	
+}
+
+h1{
+	background-color: #E9967A;
+	color:#FF4500;
+	font-family:arial;
+	text-transform:uppercase;
+	font-variant:small-caps;
+}
+div{
+	padding:3px 0px;
+	margin:6px 0px;
+}
+.par1{
+	background-color:lightblue;
+	color:green;
+	font-family:calibri;
+}
+.static{
+	border-width: 3px;
+	border-style:solid;
+	border-color:#E9967A;
+	font-family:arial;
+}
+
+
+.relative{
+	position:relative;
+	border:dotted 3px #9932CC;
+	left:60px;
+}
+	
+.fixed{
+	border:3px dashed #04B404;
+	background-color:#FFB973;
+	max-width:250px;
+	position:fixed;
+	margin-bottom:99px;
+	right:0px;
+	bottom:0px;
+}
+.relative1{
+	border:3px groove #008000;
+	width:500px;
+	height:150;
+	position:relative;
+	z-index:2;
+}
+.absolute1{
+	width:250px;
+	height:75px;
+	margin-right:6px;
+	margin-bottom:6px;
+	border:3px ridge #ADFF2F;
+}
+.sticky{
+	position:sticky;
+	background-color:#008000;
+	text-align:center;
+	color:#ADFF2F;
+	border:3px solid #ADFF2F;
+	top:0;
+}
+.img1{
+	position: absolute;
+	left:6px;
+	top: 6px;
+	width:30%;
+	z-index:-1;
+	opacity:-0.5;
+}
+.container{
+	position:relative;
+	border:3px solid #8B008B;
+}
+.img2{
+	width:50%;
+	height:auto;
+	opacity:0.5;
+	z-index:-1;
+}
+.topleft , .topright, .bottomleft, .bottomright, .center{
+	position:absolute;
+	font-size:18px;
+	font-variant:small-caps;
+	font-weight:bold;
+	color:#8B008B;
+	background-color:#FF9C00;
+	border:3px solid #8B008B;
+} 
+.topleft{
+	
+	top:9px;
+	left:9px;
+}
+.topright{
+	
+	top:9px;
+	right:9px;
+}
+.bottomleft{
+	
+	bottom:9px;
+	left:9px;
+}
+.bottomright{
+	
+	bottom:9px;
+	right:9px;
+}
+.center{
+	
+	right:50%;
+	top:50%;
+}

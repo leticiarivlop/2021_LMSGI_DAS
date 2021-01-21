@@ -1,0 +1,120 @@
+@font-face{
+	font-family:'Goldman bold';
+	src:url(../fonts/Goldman-bold.ttf);
+}
+@font-face{
+	font-family:'Goldman';
+	src:url(../fonts/Goldman-regular.ttf);
+}
+@font-face{
+	font-family:'Architects Daughter';
+	src:url(../fonts/ArchitectsDaughter-Regular.ttf);
+}
+@font-face{
+	font-family:'Fredericka';
+	src:url(../fonts/FrederickatheGreat-Regular.ttf);
+}
+@font-face{
+	font-family:'Parisienne-Regular';
+	src:url(../fonts/Parisienne-Regular.ttf);
+}
+body{
+	font-family:'Parisienne-Regular';
+	background-image:url('../images/Le_petit_prince.png');
+	background-position:top right;
+	background-repeat:no-repeat;
+	margin-right:300px;
+}
+h1{
+	font-weight:bold;
+	text-transform:capitalize;
+	font-size:3em;
+	color:Crimson;
+	text-decoration:underline;
+	text-decoration-color:Crimson;
+	text-decoration-style:double;
+	font-family:'Fredericka';
+	letter-spacing:5px;
+}
+p{
+	font-family:Goldman;
+	font-style:italic;
+	background-color:Crimson;
+	font-style:italic;
+	padding:5px 0;
+}
+p span{
+	color:#fff;
+}
+p:first-letter{
+	font-size:2.5em;
+}
+.lista1 > li , .lista2 > li , .lista3 > li{
+	border-style:dotted;
+	border-color:crimson;
+	border-width:1px;
+	font-style:1,5em;
+}
+.lista1{
+	list-style-position:inside;
+	list-style-type:circle;
+}
+.lista1:nth-chid(odd){
+	font-family:'Goldman';
+}
+.lista1:nth-child(even){
+	font-family:'Goldman-Bold';
+}
+.lista2{
+	list-style-position:outside;
+	list-style-type:square;
+}
+.lista2:nth-child(1){
+	font-family:'Architect Daughter';
+}
+.lista3{
+	list-style-position:inside;
+	list-style-image:url(../images/sqpurple.png);
+}
+.lista4{
+	background-color:lightsalmon;
+	border:dashed 2px darkred;
+	list-style:none;
+}
+.lista4 li{
+	background-color:darkred;
+	color:lightsalmon;
+	margin-top:5px;
+	
+}
+.lista4 li:before {
+	content: '#' ;
+	width: 1em;
+	margin-left: -1em;
+	color: darkred;
+	display:inline-block;
+}
+.lista5{
+	background-color:lightsalmon;
+	list-style-type:none;
+	color: darkred;
+	border-left-color:darkred;
+	border-left-width:5px;
+	border-left-style:solid;
+	padding:5px;
+}
+.lista6{
+	list-style:none;
+	color:darkred;
+	margin:0px;
+	padding:0px;
+}
+.lista6 li{
+	border-style:dotted;
+	border-width:1px 1px 0px 1px;
+	border-color:darkred;
+	
+}
+.lista6 li:last-child{
+	border-bottom-width:1px;
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+	<!--	Author: David Aparicio
+		Date: 27/10/2020
+-->
+<html lang="es">
+		<head>
+			<title>HTML 05 David Aparicio</title>
+			<meta charset="utf-8">
+			<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+			<meta name="author" content="David Aparicio">
+			<meta name="generator" content="Notepad++">
+			</head>
+	<body>
+		<h1 style="text-align:center">Plantilla de formulario de eleccion de compra de coche</h1>
+		<form action="#">
+			<fieldset>
+				<label for="usuario">Usuario</label>
+				<input type="text" name="usuario" id="usuario" value="">
+				<label for="password">Contraseña</label>
+				<input type="password" value="" name="password" id="password">
+			</fieldset>		
+			<fieldset style="background-color:rgb(0,255,238)">
+				<legend>Eleccion de marca y modelo</legend>
+				<label for="marca">Marca:</label>
+				<select name="marca" id="marca">
+					<option value="Renault">Renault</option>
+					<option value="Nissan">Nissan</option>
+					<option value="Citroen">Citroën</option>
+					<option value="Audi">Audi</option>
+					<option value="Seat">SEAT</option>
+					<option value="Opel">Opel</option>
+					</select>
+					<label for="modelo"> Modelo: </label>
+					<input type="text" name="modelo" value="" id="modelo">
+				</fieldset>
+				<fieldset style="background-color:rgb(0,255,110)">
+					<legend> Valores numéricos</legend>
+					<table>
+						<tr>
+							<td>
+								<label for="precMin">Precio Mínimo</label>
+								<input type="number" value="" id="precMin" name="precMin" min="0" max="1000000">
+							</td>
+							<td>
+								<label for="precMax">Precio Máximo</label>
+								<input type="number" value="" id="precMax" name="precMax" min="0" max="1000000">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="km">Kilometros</label>
+								<input type="range" id="km" value="0" min="0" max="1000000" step="20000">
+							</td>
+							<td>
+							</td>
+						</tr>
+					</table>
+					</fieldset>
+				<fieldset style="background-color:rgb(191,112,255)">
+					<legend> Información del propietario</legend>
+					<table>
+						<tr>
+							<td>
+								<label for="email">E-mail</label>
+								<input type="email" value="" id="email" name="email" required>
+							</td>
+							<td>
+								<label for="telefono">Telefono de contacto</label>
+								<input type="tel" value="" id="telefono" name="telefono" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" required>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="nombre">Nombre</label>
+								<input type="text" id="nombre" name="nombre" value="" required>
+							</td>
+							<td>
+							</td>
+						</tr>
+					</table>
+				</fieldset>
+				<fieldset style="background-color:rgb(255,187,0)">
+					<legend>Datos del vehículo</legend>
+					<table>
+						<tr>
+							<td>
+								<label for="descripcion">Descripción</label>
+								<textarea name="descripcion" id="descripcion"></textarea>
+							</td>
+							<td>
+									<label>Extras</label>
+								<ul>
+									<li>
+										<label for="GPS">GPS</label>
+										<input type="checkbox" name="extras" value="GPS" id="GPS">
+									</li>
+									<li>
+										<label for="asientosCalientes">Asientos Calefactados</label>
+										<input type="checkbox" name="extras" value="asientosCalientes" id="asientosCalientes">
+									</li>
+									<li>
+										<label for="otrosExtras">Otros Extras
+										<input type="checkbox" name="extras" value="otrosExtras" id="otrosExtras">
+										</label>
+										<input type="text" name="otrosExtras" value="" id="txtOtrosExtras">
+									</li>
+								</ul>
+							</td>
+							<td>
+								<label for="fechaMatricula">Fecha de matriculación</label>
+								<input type="date" name="fechaMatricula" id="fechaMatricula" required>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>El vehiculo es de fumador habitual</label>
+								<ul>
+									<li>
+										<label for="siFumador">Si</label>
+										<input type="radio" id="siFumador" name="fumador" value="si">
+									</li>
+									<li>
+										<label for="noFumador">No</label>
+										<input type="radio" id="noFumador" name="fumador" value="no">
+									</li>
+								</ul>
+							</td>
+							<td>
+								<label for="color">Color</label>
+								<input type="color" id="color">
+							</td>
+							<td>
+								<label for="image">Imagen del coche</label>
+								<input type="image" name="image" id="image" height="100" width="100" alt="Imagen del coche que quiere vender">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="semana">Semana en la que salga el anuncio</label>
+								<input type="week" id="semana" min="2020-W40" max="2021-W01">
+							</td>
+							<td>
+								<label for="URL">Otras paginas donde tengas el coche anunciado</label>
+								<input type="URL" id="URL" name="URL" value="">
+							</td>
+							<td>
+								<label for="buscar">Buscar</label>
+								<input type="search" id="buscar" name="buscar" value="">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="hora">Hora </label>
+								<input type="time" id="hora" name="hora">
+							</td>
+							<td colspan="2">
+								<label for="mes" >Mes en el que estamos</label>
+								<input type="month" id="mes" name="mes">
+							</td>
+						</tr>
+					</table>
+				</fieldset>
+				<fieldset style="background-color:rgb(255,51,51)">
+					<legend>Localizacion del vehiculo</legend>
+						<label for="Provincia">Provincia</label>
+						<input list="provincia" name="Provincia" id="Provincia">
+					<datalist id="provincia">
+						<option value="Avila">Avila</option>
+						<option value="Burgos">Burgos</option>
+						<option value="Leon">León</option>
+						<option value="Palencia">Palencia</option>
+						<option value="Salamanca">Salamanca</option>
+						<option value="Segovia">Segovia</option>
+						<option value="Soria">Soria</option>
+						<option value="Valladolid">Valladolid</option>
+						<option value="Zamora">Zamora</option>
+					</datalist>
+				<input type="hidden">
+				</fieldset>
+				<fieldset style="background-color:rgb(238,0,255)">
+					<input type="reset" value="reset">
+					<input type="submit" value="Enviar">
+				</fieldset>
+		</form>
+	</body>
+</html>
