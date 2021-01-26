@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE internet[
+    <!ELEMENT descripcion (#PCDATA)>
+    <!ELEMENT dia (#PCDATA)>
+    <!ELEMENT mes (#PCDATA)>
+    <!ELEMENT anyo (#PCDATA)>
+    <!ELEMENT fecha (dia,mes,anyo)>
+    <!ELEMENT hechoHistorico (descripcion,fecha)>
+    <!ELEMENT internet (hechoHistorico*)>
+]>
 <internet>
 	<hechoHistorico>
-		<Descripcion> Se Funda Youtube</Descripcion>
+		<descripcion> Se Funda Youtube</descripcion>
 		<fecha>
 			<dia>15</dia>
 			<mes>02</mes>
@@ -9,7 +18,7 @@
 		</fecha>
 	</hechoHistorico>
 	<hechoHistorico>
-		<Descripcion>Se funda Google</Descripcion>
+		<descripcion>Se funda Google</descripcion>
 		<fecha>
 			<dia>04</dia>
 			<mes>09</mes>
@@ -17,7 +26,7 @@
 		</fecha>
 	</hechoHistorico>
 	<hechoHistorico>
-		<Descripcion> Se Funda Facebook</Descripcion>
+		<descripcion> Se Funda Facebook</descripcion>
 		<fecha>
 			<dia>04</dia>
 			<mes>02</mes>
