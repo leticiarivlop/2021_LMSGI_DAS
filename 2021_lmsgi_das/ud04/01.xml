@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <mail>
-	<remitente></remitente>
-	<destinatario></destinatario>
-	<fecha></fecha>
-	<asunto></asunto>
-	<mensaje></mensaje>
+	<remitente>diego.casfre@educa.jcyl.es</remitente>
+	<destinatario>david.apasir@educa.jcyl.es</destinatario>
+        <destinatario>aroa.graoma@educa.jcyl.es</destinatario>
+	<fecha>
+            <dia>26</dia>
+            <mes>01</mes>
+            <anyo>2021</anyo>
+        </fecha>
+	<asunto>Prueba</asunto>
+	<mensaje/>
 	<ficherosAdjuntos>
-		<nombreFichero></nombreFichero>
-		<tipoMIME></tipoMIME>
+		<nombreFichero>prueba.pdf</nombreFichero>
+		<tipoMIME>application/pdf</tipoMIME>
 	</ficherosAdjuntos>
+        <ficherosAdjuntos>
+            <nombreFichero>prueba.jpg</nombreFichero>
+            <tipoMIME>image/jpeg</tipoMIME>
+        </ficherosAdjuntos>
 </mail>
