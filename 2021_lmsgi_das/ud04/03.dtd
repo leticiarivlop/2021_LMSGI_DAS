@@ -1,0 +1,7 @@
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT dia (#PCDATA)>
+<!ELEMENT mes (#PCDATA)>
+<!ELEMENT anyo (#PCDATA)>
+<!ELEMENT fecha (dia,mes,anyo)>
+<!ELEMENT hechoHistorico (descripcion,fecha)>
+<!ELEMENT internet (hechoHistorico*)>

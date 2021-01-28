@@ -1,23 +1,23 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<!DOCTYPE internet[
-    <!ELEMENT descripcion (#PCDATA)>
-    <!ELEMENT dia (#PCDATA)>
-    <!ELEMENT mes (#PCDATA)>
-    <!ELEMENT anyo (#PCDATA)>
-    <!ELEMENT fecha (dia,mes,anyo)>
-    <!ELEMENT hechoHistorico (descripcion,fecha)>
-    <!ELEMENT internet (hechoHistorico*)>
-]>
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE internet SYSTEM '03.dtd'>
+
 <internet>
-	<hechoHistorico>
-		<descripcion> Se Funda Youtube</descripcion>
-		<fecha>
-			<dia>15</dia>
-			<mes>02</mes>
-			<anyo>2005</anyo>
-		</fecha>
-	</hechoHistorico>
-	<hechoHistorico>
+    <hechoHistorico>
+        <descripcion>Se Funda Youtube</descripcion>
+        <fecha>
+            
+            <dia>15</dia>
+            <mes>02</mes>
+            <anyo>2005</anyo>
+        </fecha>
+    </hechoHistorico>
+    <hechoHistorico>
 		<descripcion>Se funda Google</descripcion>
 		<fecha>
 			<dia>04</dia>
@@ -33,5 +33,4 @@
 			<anyo>2004</anyo>
 		</fecha>
 	</hechoHistorico>
-	
 </internet>
