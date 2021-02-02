@@ -1,0 +1,19 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2 feb. 2021, 13:02:19
+    Author     : daw1
+*/
+nombre{
+    color: red;
+    font-size:20px;
+}
+ejemplo{
+white-space:pre;}
+ejemplo:after{
+    content:'\A';
+    white-space:pre;
+}

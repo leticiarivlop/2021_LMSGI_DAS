@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT FirstName (#PCDATA)>
+<!ELEMENT LastName (#PCDATA)>
+<!ELEMENT ContactNo (#PCDATA)>
+<!ELEMENT Email (#PCDATA)>
+<!ELEMENT City (#PCDATA)>
+<!ELEMENT State (#PCDATA)>
+<!ELEMENT Zip (#PCDATA)>
+<!ELEMENT Address (City,State,Zip)>
+<!ELEMENT Employee (FirstName,LastName,ContactNo?,Email+,Address)>
+<!ELEMENT Company (Employee)>
+

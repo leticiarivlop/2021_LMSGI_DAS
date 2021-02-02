@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="06.css"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE lenguaje[
+<!ELEMENT lenguaje (codigo+)>
+<!ELEMENT codigo (nombre,ejemplo)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT ejemplo (#PCDATA)>
+]>
+<lenguaje>
+    <codigo>
+        <nombre>HTML</nombre>
+        <ejemplo>
+          <![CDATA[
+            <!DOCTYPE html>
+            <html>
+             <body>
+        
+                <h1>My First Heading</h1>
+                <p>My first paragraph</p>
+        
+             </body>
+         </html>
+        ]]>  
+        </ejemplo>
+    </codigo>
+    <codigo>
+        <nombre>SQL</nombre>
+            <ejemplo>
+                <![CDATA[
+                    select nombre, apellidos
+                    from alumnos;
+                ]]> 
+            </ejemplo>
+    </codigo>
+</lenguaje>

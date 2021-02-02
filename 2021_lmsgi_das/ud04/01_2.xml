@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE mail[
+    <!ELEMENT remitente (#PCDATA)>
+    <!ELEMENT destinatario (#PCDATA)>
+    <!ELEMENT asunto (#PCDATA)>
+    <!ELEMENT mensaje (#PCDATA)>
+    <!ELEMENT fecha EMPTY>
+    <!ELEMENT ficherosAdjuntos (#PCDATA)>
+    <!ELEMENT mail (remitente,destinatario+,fecha,asunto?,mensaje?,ficherosAdjuntos*)>
+    <!ATTLIST fecha dia CDATA #REQUIRED
+                    mes CDATA #REQUIRED
+                    anyo CDATA #REQUIRED>
+    <!ATTLIST ficherosAdjuntos tipo CDATA #IMPLIED>
+]>
+<mail>
+	<remitente>diego.casfre@educa.jcyl.es</remitente>
+	<destinatario>david.apasir@educa.jcyl.es</destinatario>
+        <destinatario>aroa.graoma@educa.jcyl.es</destinatario>
+        <fecha dia="16" mes="16" anyo="2021"/>
+	<asunto>Prueba</asunto>
+	<mensaje/>
+	<ficherosAdjuntos tipo="aplication/pdf">prueba.pdf</ficherosAdjuntos>
+        <ficherosAdjuntos tipo="image/jpeg">prueba.jpg</ficherosAdjuntos>
+</mail>
