@@ -4,9 +4,9 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<!DOCTYPE lugares '08.dtd'>
 
-<lugares>
-    En el <lugar>polo norte</lugar>hace mucho frio.Pero,en el 
-    <lugar>Desierto del Sahara</lugar> hace mucho calor. 
-</lugares>
+<!DOCTYPE textos SYSTEM '09.dtd'>
+<textos>
+    <texto>&obra; fue escrito por &escritor;</texto>
+    <texto>&escritor; nació el &fecha;</texto>
+</textos>
