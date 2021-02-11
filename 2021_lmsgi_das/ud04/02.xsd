@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE tierra[
+    <!ELEMENT continente (#PCDATA)>
+    <!ELEMENT pais (#PCDATA)>
+    <!ELEMENT capital (#PCDATA)>
+    <!ELEMENT localizacion (continente,pais,capital)>
+    <!ELEMENT tierra (localizacion*)>
+]>
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+   <xs:element name="tierra" type="tierra">
+    <xs:complexType name="tierra">
+        <xs:sequence>
+            <xs:element name="localizacion" type="localizacion">
+                <xs:complexType name="localizacion">
+                    <xs:sequence>
+                        <xs:element name="continente" type="xs:string"/>
+                        <xs:element name="pais" type="xs:string"/>
+                        <xs:element name="capital" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+                </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+   </xs:element>
+</xs:schema>

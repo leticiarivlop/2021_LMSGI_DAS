@@ -6,6 +6,7 @@
     <!ELEMENT localizacion (continente,pais,capital)>
     <!ELEMENT tierra (localizacion*)>
 ]>
+xsi:noNamespaceSchemaLocation='02.xsd'>
 <tierra>
     <localizacion>
         <continente>Europa</continente>

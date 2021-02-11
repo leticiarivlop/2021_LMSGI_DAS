@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE mail[
+    <!ELEMENT remitente (#PCDATA)>
+    <!ELEMENT destinatario (#PCDATA)>
+    <!ELEMENT dia (#PCDATA)>
+    <!ELEMENT mes (#PCDATA)>
+    <!ELEMENT anyo (#PCDATA)>
+    <!ELEMENT asunto (#PCDATA)>
+    <!ELEMENT mensaje (#PCDATA)>
+    <!ELEMENT nombreFichero (#PCDATA)>
+    <!ELEMENT tipoMIME (#PCDATA)>
+    <!ELEMENT fecha (dia,mes,anyo)>
+    <!ELEMENT ficherosAdjuntos (nombreFichero,tipoMIME)>
+    <!ELEMENT mail (remitente,destinatario+,fecha,asunto?,mensaje?,ficherosAdjuntos*)>
+]>
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:complexType name="tipoFecha">
+        <xs:sequence>
+                <xs:element name="dia" type="xs:byte"/>
+                <xs:element name="mes" type="xs:byte"/>
+                <xs:element name="anyo" type="xs:integer"/>
+        </xs:sequence>    
+    </xs:complexType>
+    <xs:complexType name="tipoFichero">
+        <xs:sequence>
+            <xs:element name="nombreFichero" type="xs:string"/>
+            <xs:element name="tipoMIME" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="fecha" type="tipoFecha"/>
+    <xs:element name="fichero" type="tipoFichero"/>
+    <xs:element name="mail">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="remitente" type="xs:string"/>
+                <xs:element name="destinatario" type="xs:string" maxOccurs="unbounded"/>
+                <xs:element name="fecha" type="tipoFecha"/>
+                <xs:element name="asunto" type="xs:string" minOccurs="0"/>
+                <xs:element name="mensaje" type="xs:string" minOccurs="0"/>
+                <xs:element name="ficherosAdjuntos" minOccurs="0" maxOccurs="unbounded" type="tipoFichero"/>
+                
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+</xs:schema>
