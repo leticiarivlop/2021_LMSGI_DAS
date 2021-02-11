@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<modelo
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='modeloComplejo.xsd'>
+    <curso>1</curso>
+    <ciclo>DAW</ciclo>
+    <nombreA>Desarrollo de Aplicaciones Web</nombreA>
+    <codigoPostal>49600</codigoPostal>
+    <comentario>Este  ciclo  tiene una insercion  laboral de 100%</comentario>
+    <temperatura>32.2</temperatura>
+    <codA>EDD</codA>
+    <profesor codP="ARN" modulo="LMSGI">
+    Amor Rodriguez
+    </profesor>
+</modelo>
