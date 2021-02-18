@@ -16,10 +16,48 @@ and open the template in the editor.
                         <xs:complexType>
                             <xs:simpleContent>
                                 <xs:extension base="xs:string"/>
+                                <xs:attribute name="codM"/>
                             </xs:simpleContent>
                         </xs:complexType>
+                    </xs:element>
                 </xs:complexType>
             </xs:element>
+            <xs:element name="profesores">
+                <xs:complexType>
+                    <xs:element name="profesor">
+                        <xs:complexType>
+                            <xs:simpleContent>
+                                <xs:extension base="xs:string"/>
+                                <xs:attribute name="codP" type="xs:ID"/>
+                            </xs:simpleContent>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="imparte">
+                <xs:complexType>
+                    <xs:element name="asignatura">
+                        <xs:complexType>
+                            <xs:extension base="xs:string"/>
+                                <xs:attribute name="codM"/>
+                                <xs:attribute name="codProfesor" type="xs:IDEREFS"/>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="grupo">
+                <xs:complexType>
+                    <xs:extension base="xs:string"/>
+                    <xs:attribute name="idgrupo" type="xs:string"/>
+                    <xs:pattern value="[A_Z]{3}[1,2]{1}"/>
+                    <xs:attribute name="codT" type="xs:IDEREFS"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="hora">
+                <xs:complexType>
+                    <xs:attribute name="entrada" type="xs:integer"/>
+                    <xs:attribute name="salida" type="xs:integer"/>
+                </xs:complexType>
         </xs:complexType>
     
 </xs:schema>
