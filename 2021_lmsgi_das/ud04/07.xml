@@ -7,7 +7,9 @@ and open the template in the editor.
 
 <!DOCTYPE grupo SYSTEM '07.dtd'>
 
-<grupo>
+<grupo
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='07.xsd'>
     <estudiante cod="E1" idref="E2 E3">
         David
     </estudiante>

@@ -1,18 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
+
 <!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/08.dtd
+
 -->
 
 <!--
-    TODO define vocabulary identification data
-    PUBLIC ID  : -//vendor//vocabulary//EN
-    SYSTEM ID  : http://server/path/__NAME__
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE lugares SYSTEM "08.dtd">
+
+    <lugares>
+    ...
+    </lugares>
 -->
 
-<!-- TODO define your own vocabulary/syntax. Example follows:  -->
+<!--- Put your DTDDoc comment here. -->
 <!ELEMENT lugares (#PCDATA|lugar)*>
+<!ATTLIST lugares
+    xsi:noNamespaceSchemaLocation CDATA #IMPLIED
+    xmlns:xsi CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
 <!ELEMENT lugar (#PCDATA)>
-
-

@@ -12,7 +12,10 @@
                     anyo CDATA #REQUIRED>
     <!ATTLIST ficherosAdjuntos tipo CDATA #IMPLIED>
 ]>
-<mail>
+
+<mail
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='01_02.xsd'> 
 	<remitente>diego.casfre@educa.jcyl.es</remitente>
 	<destinatario>david.apasir@educa.jcyl.es</destinatario>
         <destinatario>aroa.graoma@educa.jcyl.es</destinatario>
