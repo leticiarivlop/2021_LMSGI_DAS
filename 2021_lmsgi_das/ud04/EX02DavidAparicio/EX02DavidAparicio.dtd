@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!--
+    TODO define vocabulary identification data
+    PUBLIC ID  : -//vendor//vocabulary//EN
+    SYSTEM ID  : http://server/path/__NAME__
+-->
+
+<!-- TODO define your own vocabulary/syntax. Example follows:  -->
+<!ELEMENT catalogo (portatil*)>
+<!ELEMENT portatil (referencia,nombre,fabricante,procesador,ram,disco,pantalla,grafica,foto*)>
+<!ELEMENT referencia (#PCDATA)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT fabricante EMPTY>
+<!ATTLIST fabricante 
+                    nombre (LENOVO|HP|MSI|APPLE|ASUS|DELL|DESCONOCIDO) #REQUIRED>
+<!ELEMENT procesador (nombre,cache,numero,velocidad)>
+    <!ELEMENT cache (#PCDATA)>
+        <!ATTLIST cache tamanyo (Mb|Tb|Gb) "Gb">
+    <!ELEMENT numero (#PCDATA)>
+    <!ELEMENT velocidad (#PCDATA)>
+        <!ATTLIST velocidad medida CDATA #FIXED "Ghz">
+<!ELEMENT ram (memoria,tipo)>
+    <!ELEMENT memoria (#PCDATA)>
+        <!ATTLIST memoria medida (Mb|Tb|Gb) "Gb">
+    <!ELEMENT tipo (#PCDATA)>
+<!ELEMENT disco (#PCDATA)>
+    <!ATTLIST disco tipo (SSD|HDD) #REQUIRED>
+    <!ATTLIST disco capacidad (Mb|Tb|Gb) #REQUIRED>
+<!ELEMENT pantalla (dimension,resolucion,maxima?)>
+    <!ELEMENT dimension (#PCDATA)>
+    <!ELEMENT resolucion (#PCDATA)>
+    <!ELEMENT maxima (#PCDATA)>
+<!ELEMENT grafica (#PCDATA)>
+<!ELEMENT foto (#PCDATA)>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogo SYSTEM 'EX02DavidAparicio.dtd'>
+<catalogo
+    xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xsi:noNamespaceSchemaLocation='EX02DavidAparicio.xsd'>>
+    <portatil> 
+        <referencia>HP102219</referencia>
+        <nombre>PORTATIL HP 15-DA0204NS</nombre>
+        <fabricante nombre="HP"/>
+        <procesador>
+            <nombre>Intel Core i3-7020U</nombre>
+            <cache tamanyo="Gb">3</cache>
+            <numero>2</numero>
+            <velocidad>5.3</velocidad>
+        </procesador>
+        <ram>
+            <memoria medida="Gb">32</memoria>
+            <tipo>DDR3</tipo>
+        </ram>
+        <disco tipo="SSD" medida="Gb">250</disco>
+        <pantalla>
+            <dimension>15.6 pulgadas</dimension>
+            <resolucion>1266x768</resolucion>
+            <maxima>1366x768</maxima>
+        </pantalla>
+        <grafica>Intel UHD Graphics 620</grafica>       
+        <foto>foto1.png</foto>
+        <foto>foto2.png</foto>       
+    </portatil>
+    
+</catalogo>

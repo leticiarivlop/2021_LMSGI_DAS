@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="catalogo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="portatil" minOccurs="0" maxOcuurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="referencia" type="xs:string">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[A-Z](2)[0-9](5)"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            <xs:element name="nombre" type="xs:string"/>
+                            <xs:element name="fabricante">
+                                <xs:complexType>
+                                    <xs:attribute name="nombre" type="xs:string"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="procesador">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="xs:string"/>
+                                        <xs:element name="cache">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:attribute name="tamanyo"
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                            
+                                        </xs:element>
+                                        <xs:element name="ram">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:positiveInteger">
+                                                        <xs:attribute name="medida" type=""/>                                     </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+          
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+        
+    
+</xs:schema>
