@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE receta SYSTEM 'receta.dtd'>
+
+<receta plato="primero">
+    <nombre>
+        Rissoto milanesa
+    </nombre>
+    <descripcion>
+        
+    </descripcion>
+    <tiempo coccion="minutos">
+        20
+    </tiempo>
+    <tiempo preparacion="minutos">
+        40
+    </tiempo>
+    <ingredientes>
+        <nombreI>
+            arroz
+        </nombreI>
+        <cantidad unidad="gramos">
+            500
+        </cantidad>
+    </ingredientes>
+    <ingredientes>
+        <nombreI>
+            cebolla
+        </nombreI>
+        <cantidad>
+            1 mediana
+        </cantidad>
+    </ingredientes>
+    <ingredientes>
+        <nombreI>
+            azafran
+        </nombreI>
+        <cantidad unidad="pizca">
+            1
+        </cantidad>
+    </ingredientes>
+        <ingredientes>
+        <nombreI>
+            queso parmesano
+        </nombreI>
+        <cantidad unidad="gramos">
+            100
+        </cantidad>
+    </ingredientes>
+    <ingredientes>
+        <nombreI>
+            mantequilla
+        </nombreI>
+        <cantidad unidad="gramos">
+            100
+        </cantidad>
+    </ingredientes>
+    <ingredientes>
+        <nombreI>
+            Sal
+        </nombreI>
+    </ingredientes>
+    <ingredientes>
+        <nombreI>
+            Pimienta
+        </nombreI>
+    </ingredientes>
+    <ingredientes>
+        <nombreI>
+            caldo
+        </nombreI>
+        <cantidad unidad="mililitros">
+           1000 
+        </cantidad>
+    </ingredientes>
+    <ingredientes>
+        <nombreI>
+            vino blanco
+        </nombreI>
+        <cantidad unidad="chorro">
+            1
+        </cantidad>
+    </ingredientes>
+    <instrucciones>
+        <paso>
+            Paso 1- Picamos la cebolla y la pochamos con la mitad de la mantequilla.
+        </paso>
+        <paso>
+            Paso2- Cuando esté transparente, echamos el azafrán, el vino y dejamos que reduzca.
+        </paso>
+        <paso>
+           Paso 3.- A continuación, incorporamos el arroz, losofreímos un poco. 
+        </paso>
+        <paso>
+            Paso 4.- Vamos añadiendo el caldo caliente poco a poco mientras removemos.
+        </paso>
+        <paso>
+            Paso 5.- Salpimentamos.
+        </paso>
+        <paso>
+            Paso 6.- Cuando esté casi hecho, agregamos el resto de la mantequilla y el queso.
+        </paso>
+        <paso>
+            Paso 7.- Servimos enseguida.
+        </paso>
+    </instrucciones>
+</receta>
