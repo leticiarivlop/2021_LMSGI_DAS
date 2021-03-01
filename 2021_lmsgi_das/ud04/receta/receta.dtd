@@ -12,14 +12,21 @@ and open the template in the editor.
 -->
 
 <!-- TODO define your own vocabulary/syntax. Example follows:  -->
-<!ELEMENT receta (nombre+,descripcion*,tiempo+,ingredientes+,instrucciones*)>
+<!ELEMENT recetas (receta)*>
+<!ATTLIST recetas
+    version CDATA #IMPLIED
+    elementFormDefault CDATA #IMPLIED
+    xmlns:xs CDATA #IMPLIED
+  >
+<!ELEMENT receta (nombre+,descripcion*,tiempo+,ingredientes+,instrucciones?)>
 <!ATTLIST receta plato (primero|segundo|postre) #REQUIRED>
 <!ELEMENT nombre (#PCDATA) >
 <!ELEMENT descripcion (#PCDATA)>
 <!ELEMENT tiempo (#PCDATA)>
-<!ATTLIST receta preparacion CDATA #REQUIRED>
-<!ATTLIST receta coccion CDATA #IMPLIED>
-<!ELEMENT ingredientes (nombreI*,cantidad?)>
+<!ATTLIST tiempo preparacion CDATA #REQUIRED>
+<!ATTLIST tiempo coccion CDATA #IMPLIED>
+<!ELEMENT ingredientes (ingrediente*)>
+<!ELEMENT ingrediente (nombreI,cantidad)>
 <!ELEMENT nombreI (#PCDATA)>
 <!ELEMENT cantidad (#PCDATA)>
 <!ATTLIST cantidad medida (gramos|pizca|mililitros|cucharada|chorro) #REQUIRED>
