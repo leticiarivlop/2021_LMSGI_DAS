@@ -12,23 +12,41 @@ and open the template in the editor.
 -->
 
 <!-- TODO define your own vocabulary/syntax. Example follows:  -->
-<!ELEMENT recetas (receta)*>
-<!ATTLIST recetas
-    version CDATA #IMPLIED
-    elementFormDefault CDATA #IMPLIED
-    xmlns:xs CDATA #IMPLIED
+<!ELEMENT receta (nombre,descripcion?,tiempo,ingredientes,instrucciones)>
+<!ATTLIST receta
+    plato (primero|segundo|postre) #REQUIRED
   >
-<!ELEMENT receta (nombre+,descripcion*,tiempo+,ingredientes+,instrucciones?)>
-<!ATTLIST receta plato (primero|segundo|postre) #REQUIRED>
-<!ELEMENT nombre (#PCDATA) >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT nombre (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
 <!ELEMENT descripcion (#PCDATA)>
-<!ELEMENT tiempo (#PCDATA)>
-<!ATTLIST tiempo preparacion CDATA #REQUIRED>
-<!ATTLIST tiempo coccion CDATA #IMPLIED>
-<!ELEMENT ingredientes (ingrediente*)>
-<!ELEMENT ingrediente (nombreI,cantidad)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT tiempo EMPTY>
+<!ATTLIST tiempo
+    preparacion CDATA #REQUIRED
+    coccion CDATA #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT ingredientes (ingrediente)+>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT ingrediente (nombre,cantidad?)>
+
+<!--- Put your DTDDoc comment here. -->
 <!ELEMENT nombreI (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
 <!ELEMENT cantidad (#PCDATA)>
-<!ATTLIST cantidad medida (gramos|pizca|mililitros|cucharada|chorro) #REQUIRED>
-<!ELEMENT instrucciones (paso+)>
+<!ATTLIST cantidad
+    unidad (gramos|pizca|mililitros|cucharada|chorro) #IMPLIED
+  >
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT instrucciones (paso)+>
+
+<!--- Put your DTDDoc comment here. -->
 <!ELEMENT paso (#PCDATA)>
