@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<!DOCTYPE formulario SYSTEM "html5DAS.dtd">
+<formulario>
+    <usuario>
+        <nick>
+            david A.
+        </nick>
+        <password>
+            ********
+        </password>
+    </usuario>
+    <coche>
+        <marca>
+            Renault 
+        </marca>
+        <modelo>
+            Laguna
+        </modelo>
+        <valor_num>
+            <prec_min>
+                1500
+            </prec_min>
+            <prec_max>
+                2000
+            </prec_max>
+            <kilometros>
+                200000
+            </kilometros>
+        </valor_num>
+        <informacion_prop>
+            <email>
+                david.apasir@educa.jcyl.es
+            </email>
+            <telefono>
+                722289853
+            </telefono>
+            <nombre>
+                David Aparicio
+            </nombre>
+        </informacion_prop>
+        <datos_vehiculo>
+            <descripcion>
+                
+            </descripcion>
+            <extras>
+                <gps>
+                    si
+                </gps>
+                <asiento_calefactado>
+                    Si
+                </asiento_calefactado>
+                <otrosExtras>
+                    AC CC
+                </otrosExtras>
+            </extras>
+            <fechaMatricula>
+                02/02/2021
+            </fechaMatricula>
+            <fumador>
+                No
+            </fumador>
+            <color>
+                verde
+            </color>
+            <imagen>
+                
+            </imagen>
+            <semana_anuncio>
+                
+            </semana_anuncio>
+            <paginasVenta>
+                milanunicios, wallapop
+            </paginasVenta>
+        </datos_vehiculo>
+        <localizacion_vehiculo>
+            <provincia>
+                Zamora
+            </provincia>
+        </localizacion_vehiculo>
+    </coche>
+</formulario>
