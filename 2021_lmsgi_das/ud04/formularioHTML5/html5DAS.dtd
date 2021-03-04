@@ -23,7 +23,7 @@
 <!ELEMENT formulario (usuario|coche)*>
 
 <!--- Definicion del usuario -->
-<!ELEMENT usuario (#PCDATA|nick|password)*>
+<!ELEMENT usuario (|nick|password)>
 <!--- Nombre de usuario -->
 <!ELEMENT nick (#PCDATA)>
 
@@ -31,7 +31,7 @@
 <!ELEMENT password (#PCDATA)>
 
 <!--- Informacion del coche -->
-<!ELEMENT coche (marca|modelo|valor_num|informacion_prop|datos_vehiculo|localizacion_vehiculo)*>
+<!ELEMENT coche (marca|modelo|valor_num|informacion_prop|datos_vehiculo|localizacion_vehiculo)>
 
 <!--- Marca del coche -->
 <!ELEMENT marca (#PCDATA)>
@@ -90,17 +90,17 @@
 <!--- Color del coche -->
 <!ELEMENT color (#PCDATA)>
 
-<!--- Put your DTDDoc comment here. -->
+<!--- Imagen del coche. -->
 <!ELEMENT imagen (#PCDATA)>
 
-<!--- Put your DTDDoc comment here. -->
+<!--- Semanas que durará el anuncio. -->
 <!ELEMENT semana_anuncio (#PCDATA)>
 
-<!--- Put your DTDDoc comment here. -->
+<!--- Otras paginas donde tengas el coche a la venta. -->
 <!ELEMENT paginasVenta (#PCDATA)>
 
-<!--- Put your DTDDoc comment here. -->
+<!--- Donde se encuentra el vehiculo. -->
 <!ELEMENT localizacion_vehiculo (provincia)*>
 
-<!--- Put your DTDDoc comment here. -->
+<!--- Provincia donde esta el vehiculo. -->
 <!ELEMENT provincia (#PCDATA)>

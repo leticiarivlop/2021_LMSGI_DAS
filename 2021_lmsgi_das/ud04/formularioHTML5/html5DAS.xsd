@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="formulario">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="usuario" use="required">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nick" type="xs:string"></xs:element>
+                            <xs:element name="password" type="xs:string"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="coche" use="required">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="marca" type="xs:string">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="Renault|Nissan|Citroen|Audi|SEAT|Opel"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="modelo" type="xs:string"></xs:element>
+                            <xs:element name="valor_num">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                       <xs:element name="prec_min" type="xs:positiveInteger" minInclusive="0"/>
+                                       <xs:element name="prec_max" type="xs:positiveInteger" maxInclusive="999999"/>
+                                        
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
