@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/html5DAS.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE formulario SYSTEM "html5DAS.dtd">
+
+    <formulario>
+    ...
+    </formulario>
+-->
+
+<!--- Inicio del formulario -->
+<!ELEMENT formulario (usuario|coche)*>
+
+<!--- Definicion del usuario -->
+<!ELEMENT usuario (#PCDATA|nick|password)*>
+<!--- Nombre de usuario -->
+<!ELEMENT nick (#PCDATA)>
+
+<!--- Contraseña del usuario -->
+<!ELEMENT password (#PCDATA)>
+
+<!--- Informacion del coche -->
+<!ELEMENT coche (marca|modelo|valor_num|informacion_prop|datos_vehiculo|localizacion_vehiculo)*>
+
+<!--- Marca del coche -->
+<!ELEMENT marca (#PCDATA)>
+
+<!--- Modelo del coche -->
+<!ELEMENT modelo (#PCDATA)>
+
+<!--- Valores numericos -->
+<!ELEMENT valor_num (prec_min|prec_max|kilometros)*>
+
+<!--- Precio minimo del coche -->
+<!ELEMENT prec_min (#PCDATA)>
+
+<!--- Precio maximo del coche -->
+<!ELEMENT prec_max (#PCDATA)>
+
+<!--- Kilometros del coche -->
+<!ELEMENT kilometros (#PCDATA)>
+
+<!--- Informacion del propietario -->
+<!ELEMENT informacion_prop (email|telefono|nombre)*>
+
+<!--- Email del propietario -->
+<!ELEMENT email (#PCDATA)>
+
+<!--- Numero de telefono del propietario -->
+<!ELEMENT telefono (#PCDATA)>
+
+<!--- Nombre del propietario -->
+<!ELEMENT nombre (#PCDATA)>
+
+<!--- Datos del vehiculo -->
+<!ELEMENT datos_vehiculo (descripcion|extras|fechaMatricula|fumador|color|imagen|semana_anuncio|paginasVenta)*>
+
+<!--- Descripcion del vehiculo -->
+<!ELEMENT descripcion (#PCDATA)>
+
+<!--- Extras del vehiculo -->
+<!ELEMENT extras (gps|asiento_calefactado|otrosExtras)*>
+
+<!--- Marcar si el vehiculo tiene el extra GPS -->
+<!ELEMENT gps (#PCDATA)>
+
+<!--- Marcar si el vehiculo tiene el extra Asientos Calefactados -->
+<!ELEMENT asiento_calefactado (#PCDATA)>
+
+<!--- Escribir extras -->
+<!ELEMENT otrosExtras (#PCDATA)>
+
+<!--- Fecha de matriculacion -->
+<!ELEMENT fechaMatricula (#PCDATA)>
+
+<!--- Vehiculo de fumador -->
+<!ELEMENT fumador (#PCDATA)>
+
+<!--- Color del coche -->
+<!ELEMENT color (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT imagen (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT semana_anuncio (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT paginasVenta (#PCDATA)>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT localizacion_vehiculo (provincia)*>
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT provincia (#PCDATA)>
