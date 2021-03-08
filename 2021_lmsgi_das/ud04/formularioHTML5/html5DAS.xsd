@@ -35,7 +35,50 @@ and open the template in the editor.
                                     <xs:sequence>
                                        <xs:element name="prec_min" type="xs:positiveInteger" minInclusive="0"/>
                                        <xs:element name="prec_max" type="xs:positiveInteger" maxInclusive="999999"/>
-                                        
+                                       <xs:element name="Kilometros" type="xs:positiveImteger" minInclusive="0" maxInclusive="999999"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="informacion_prop">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="email" type="xs:string"/>
+                                        <xs:element name="telefono" type="xs:positiveInteger"/>
+                                        <xs:element name="nombre" type="xs:string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="datos_vehiculo">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="descripcion" type="xs:integer"/>
+                                        <xs:element name="extras">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="gps" type="xs:boolean"/>
+                                                    <xs:element name="asiento_calefactado" type="xs:boolean"/>
+                                                    <xs:element name="otrosExtras" type="xs:string"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="fechaMatricula" type="xs:date"/>
+                                        <xs:element name="fumador" type="xs:boolean"/>
+                                        <xs:element name="imagen" type="xs:string"/>
+                                        <xs:element name="semana_anuncio" type="xs:positiveInteger"/>
+                                        <xs:element name="paginasVenta" type="xs:string"/>
+                                        <xs:element name="localizacion_vehiculo">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="provincia">
+                                                        <xs:simpleType>
+                                                            <xs:restriction base="xs:string">
+                                                                <xs:pattern value="Leon|Zamora|Salamanca|Valladolid|Palencia|Burgos|Avila|Segovia|Soria"/>
+                                                            </xs:restriction>
+                                                        </xs:simpleType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>

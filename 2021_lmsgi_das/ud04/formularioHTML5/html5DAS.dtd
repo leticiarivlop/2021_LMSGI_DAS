@@ -10,20 +10,13 @@
 <!--
     An example how to use this DTD from your XML document:
 
-    <?xml version="1.0"?>
-
-    <!DOCTYPE formulario SYSTEM "html5DAS.dtd">
-
-    <formulario>
-    ...
-    </formulario>
 -->
 
 <!--- Inicio del formulario -->
 <!ELEMENT formulario (usuario|coche)*>
 
 <!--- Definicion del usuario -->
-<!ELEMENT usuario (|nick|password)>
+<!ELEMENT usuario (nick|password)>
 <!--- Nombre de usuario -->
 <!ELEMENT nick (#PCDATA)>
 
@@ -40,7 +33,7 @@
 <!ELEMENT modelo (#PCDATA)>
 
 <!--- Valores numericos -->
-<!ELEMENT valor_num (prec_min|prec_max|kilometros)*>
+<!ELEMENT valor_num (prec_min|prec_max|kilometros)>
 
 <!--- Precio minimo del coche -->
 <!ELEMENT prec_min (#PCDATA)>
@@ -100,7 +93,7 @@
 <!ELEMENT paginasVenta (#PCDATA)>
 
 <!--- Donde se encuentra el vehiculo. -->
-<!ELEMENT localizacion_vehiculo (provincia)*>
+<!ELEMENT localizacion_vehiculo (provincia)>
 
 <!--- Provincia donde esta el vehiculo. -->
 <!ELEMENT provincia (#PCDATA)>

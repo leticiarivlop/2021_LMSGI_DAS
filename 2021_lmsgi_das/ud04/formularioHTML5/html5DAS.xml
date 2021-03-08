@@ -6,7 +6,9 @@ and open the template in the editor.
 -->
 
 <!DOCTYPE formulario SYSTEM "html5DAS.dtd">
-<formulario>
+<formulario
+xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xsi:noNamespaceSchemaLocation='html5DAS.xsd'>
     <usuario>
         <nick>
             david A.

@@ -2,7 +2,7 @@
 <!DOCTYPE catalogo SYSTEM 'EX02DavidAparicio.dtd'>
 <catalogo
     xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
-    xsi:noNamespaceSchemaLocation='EX02DavidAparicio.xsd'>>
+    xsi:noNamespaceSchemaLocation='EX02DavidAparicio.xsd'>
     <portatil> 
         <referencia>HP102219</referencia>
         <nombre>PORTATIL HP 15-DA0204NS</nombre>
