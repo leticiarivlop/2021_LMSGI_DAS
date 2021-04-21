@@ -26,6 +26,7 @@
                     th,td{
                     border:1px solid black;
                     padding:2px;
+                    colspan:<xsl:apply-templates/>
                     }
                 </style>
 
@@ -40,6 +41,7 @@
                     </tr>
                     <xsl:apply-templates select="modulos/modulo"/>
                 </table>
+                <br/>
                 <table>
                     <tr>
                         <th>Codigo del Profesor</th>
@@ -47,11 +49,21 @@
                         <xsl:apply-templates select="profesores/profesor"/>
                     </tr>
                 </table>
+            <br/>
                 <table>
                     <tr>
-                        <th><xsl:value-of select="hora/dia_sem"/></th>
-                       
+                        <th></th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miercoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
                     </tr>
+                    <tr>
+                            <xsl:apply-templates select="grupo/hora"/>
+                            <xsl:apply-templates select="dia_sem"/>
+                    </tr>
+                   
                 </table>
             </body>
         </html>
@@ -88,13 +100,12 @@
     </xsl:template>
     <xsl:template match="grupo/hora">
         <th>
-                <xsl:value-of select="concat(@entrada,' - ',@salida)"/>
+            <xsl:value-of select="concat(@entrada,' - ',@salida)"/>
         </th>
-        <td>
-            <xsl:value-of select="dia_sem"/>
-        </td>
     </xsl:template>
-    <xsl:template match="hora/dia_sem">
-            <xsl:value-of select="@dia"/>
+    <xsl:template match="dia_sem">
+        <td>
+            <xsl:value-of select="current()/text()"/>
+        </td>
     </xsl:template>
 </xsl:stylesheet>
