@@ -1,0 +1,20 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 29 abr. 2021, 10:09:03
+    Author     : daw1
+*/
+
+h1{color: green;
+                    background-color:#A9A9A9}
+                    table,th,td{
+                    border:1px solid black;
+                    text-align:center;
+                    }
+                    #fecha{color:green;}
+                    #lista{color:#a9a9a9;
+                           background-color:#008911;
+                    }

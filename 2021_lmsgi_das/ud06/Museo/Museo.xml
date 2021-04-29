@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+
+<museos>
+    <museo>
+        <nombre>Museo del Prado</nombre>
+        <ciudad>Madrid</ciudad>
+        <pais>España</pais>
+    </museo>
+    <museo>
+        <nombre>National Gallery</nombre>
+        <ciudad>Londres</ciudad>
+        <pais>Reino Unido</pais>
+    </museo>
+</museos>

@@ -121,12 +121,24 @@
                 <xsl:value-of select="current()/text()"/>
             </abbr>
             <br/>
-            <abbr>
+            
+                
+                    <xsl:value-of select="//asignatura[@codM=current()]/@codProfesor"/>
+                    <abbr>
                 <xsl:attribute name="title">
-                    <xsl:value-of select="//"/>
+                    <xsl:apply-templates select="//profesores/profesor[contains($listaProfesores,@codP)]"/>
                 </xsl:attribute>
-                <xsl:value-of select="//asignatura[@codM=current()]/@codProfesor"/>
-            </abbr>
+                <xsl:variable name="listaProfesores" select="//asignatura[@codM=current()]/@codProfesor">
+                    <xsl:value-of select="$listaProfesores"/>
+                </xsl:variable>
+                    </abbr>
+            
         </td>
+    </xsl:template>
+    <xsl:template match="profesor" mode="xxx">
+        <xsl:if test="position()!=1">
+            <xsl:text>,</xsl:text>
+        </xsl:if>
+        <xsl:value-of select="text()"/>
     </xsl:template>
 </xsl:stylesheet>

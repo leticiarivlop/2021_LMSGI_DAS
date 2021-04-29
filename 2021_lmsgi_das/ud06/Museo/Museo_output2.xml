@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><museos>
+    <nombre>Museo del Prado</nombre>
+    <ciudad pais="España">Madrid</ciudad>
+    <nombre>National Gallery</nombre>
+    <ciudad pais="Reino Unido">Londres</ciudad>
+</museos>

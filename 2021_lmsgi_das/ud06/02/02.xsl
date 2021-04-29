@@ -15,17 +15,11 @@
          syntax recommendation http://www.w3.org/TR/xslt 
     -->
     <xsl:template match="/">
+        <xsl:apply-templates select="comment()"/>
         <html>
             <head>
                 <title>02 XSLT David Aparicio</title>
-                <style>
-                    h1{color: green;}
-                    table{
-                    border-collapse:collapse;
-                    width:100%;
-                    color:light-green;
-                    }
-                </style>
+                
             </head>
             <body>
                 
@@ -33,12 +27,21 @@
                
                 <table>
                     <tr>
-                    <th>Listado de tickets</th>
+                        <th colspan="2" id="lista">Listado de tickets</th>
                     </tr>
-                    
                     <xsl:apply-templates select="listatickets/ticket"/>
                     <tr>
-                        <xsl:apply-templates select="ticket/fecha"/>
+                        <xsl:apply-templates select="ticket-fecha"/>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Numero de Tickets: <xsl:value-of select="count(listatickets/ticket)"/></th>
+                        
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            Total de tickets:
+                            <xsl:value-of select="sum(//producto/precio)"/>
+                        </th>
                     </tr>
                 </table>
             </body>
@@ -46,17 +49,44 @@
     </xsl:template>
     <xsl:template match="listatickets/ticket">
         <tr> 
-            <th> Tickets:  <xsl:value-of select="numero"/> </th>
+            <th colspan="2"> Tickets:  <xsl:value-of select="numero"/> </th>
         </tr>
-      <td><xsl:apply-templates select="ticket/producto"/></td>
+        <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+        </tr>
+        
+            <xsl:apply-templates select="producto"/>
+       
+            <tr>
+                <th>Total</th>
+                <th>
+                    <xsl:value-of select="sum(producto/precio)"/>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="2" id="fecha">
+                    Fecha del ticket
+                    <xsl:value-of select="fecha"/>
+            </th>
+            </tr>
       
     </xsl:template>
-    <xsl:template match="ticket/producto">
-      
+    <xsl:template match="producto">
+        <tr> 
+            <td>
+                <xsl:value-of select="nombre"/>
+            </td>
+            <td>
+                <xsl:value-of select="precio"/>
+            </td>
+        </tr>
     </xsl:template>
-    <xsl:template match="ticket/fecha">
-        <td>
-        <xsl:value-of select="fecha"/>
-        </td>
+    <xsl:template match="comment()">
+        <xsl:text xml:space="preserve">
+            <xsl:comment>
+                <xsl:value-of select="."/>
+            </xsl:comment>
+        </xsl:text>
     </xsl:template>
 </xsl:stylesheet>
