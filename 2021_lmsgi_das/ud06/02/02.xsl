@@ -19,7 +19,7 @@
         <html>
             <head>
                 <title>02 XSLT David Aparicio</title>
-                
+                <link href="02.css" rel="stylesheet" type="text/css" />
             </head>
             <body>
                 
@@ -33,11 +33,10 @@
                     <tr>
                         <xsl:apply-templates select="ticket-fecha"/>
                     </tr>
-                    <tr>
+                    <tr class="fin">
                         <th colspan="2">Numero de Tickets: <xsl:value-of select="count(listatickets/ticket)"/></th>
-                        
                     </tr>
-                    <tr>
+                    <tr class="fin">
                         <th colspan="2">
                             Total de tickets:
                             <xsl:value-of select="sum(//producto/precio)"/>
@@ -48,19 +47,19 @@
         </html>
     </xsl:template>
     <xsl:template match="listatickets/ticket">
-        <tr> 
+        <tr id="ticket"> 
             <th colspan="2"> Tickets:  <xsl:value-of select="numero"/> </th>
         </tr>
         <tr>
             <th>Producto</th>
             <th>Precio</th>
-        </tr>
+        </tr >
         
             <xsl:apply-templates select="producto"/>
        
             <tr>
-                <th>Total</th>
-                <th>
+                <th class="producto">Total</th>
+                <th class="producto">
                     <xsl:value-of select="sum(producto/precio)"/>
                 </th>
             </tr>
@@ -74,10 +73,10 @@
     </xsl:template>
     <xsl:template match="producto">
         <tr> 
-            <td>
+            <td class="producto">
                 <xsl:value-of select="nombre"/>
             </td>
-            <td>
+            <td class="producto">
                 <xsl:value-of select="precio"/>
             </td>
         </tr>

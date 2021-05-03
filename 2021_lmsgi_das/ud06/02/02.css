@@ -9,12 +9,27 @@ and open the template in the editor.
 */
 
 h1{color: green;
-                    background-color:#A9A9A9}
-                    table,th,td{
-                    border:1px solid black;
-                    text-align:center;
-                    }
-                    #fecha{color:green;}
-                    #lista{color:#a9a9a9;
-                           background-color:#008911;
-                    }
+     background-color: #A9A9A9}
+table{
+    width: 100%;
+}
+.producto{
+                 border-bottom: 1px solid black;
+                text-align: center;
+                   }
+ #fecha{color: green;
+ text-align: center;}
+ #lista{background-color: green;
+          color: #A9A9A9;
+          text-align: left;
+ }
+          #ticket{
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+          }      
+          .fin{
+              color: #A9A9A9;
+              background-color: green;
+              text-align: right;
+          }
