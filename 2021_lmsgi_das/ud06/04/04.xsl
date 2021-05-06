@@ -11,7 +11,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method="xml" omit-xml-declaration="yes" />
     
-l:stylesheet>    <xsl:template match="*">
+    <xsl:template match="*">
         <xsl:element name="{local-name()}">
             <xsl:apply-templates select="@*"/>
             <xsl:apply-templates select="node()"/>
@@ -19,9 +19,6 @@ l:stylesheet>    <xsl:template match="*">
             <xsl:apply-templates select="@* | node()"/> -->
         </xsl:element>
     </xsl:template>
-
- 
-
     <xsl:template match="@*">
         <xsl:choose>
             <xsl:when test="current()='04.xsd'">
@@ -36,12 +33,7 @@ l:stylesheet>    <xsl:template match="*">
                 </xsl:element>
             </xsl:otherwise>
         </xsl:choose>
-        
-        
     </xsl:template>
-
- 
-
     <xsl:template match="text()">
         <xsl:value-of select="."/>
         <!-- <xsl:copy/> -->

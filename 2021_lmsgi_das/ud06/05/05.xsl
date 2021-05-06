@@ -42,6 +42,10 @@
                             <b>DIRECCIÓN:</b>
                         </td>
                         <td>
+                            <xsl:value-of select="factura/datos_emisor/dir"/> <br/>
+                            <xsl:value-of select="factura/datos_emisor/poblacion"/><br/>
+                            <xsl:value-of select="factura/datos_emisor/poblacion/@cod_postal"/><br/>
+                            <xsl:value-of select="factura/datos_emisor/provincia"/>
                             
                         </td>
                     </tr>
@@ -92,7 +96,6 @@
     <xsl:template match="factura/datos_emisor">
         <xsl:value-of select="nombre"/>
     </xsl:template>
-    <xsl:template match="factura/datos_emisor"></xsl:template>
     <xsl:template match="factura/datos_receptor">
         <xsl:value-of select="@n_cli"/>
     </xsl:template>
