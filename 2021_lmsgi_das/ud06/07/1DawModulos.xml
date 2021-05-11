@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Document   : modulos.xml
+ Created on : 6 de mayo de 2021
+ Author     : amor
+ Description:
+        Módulos del ciclo 1DAW
+-->
+<modulos>    
+    <modulo codM="EDD" >Entornos de Desarrollo</modulo>
+    <modulo codM="LMSGI">Lenguaje de Marcas y Sistemas de Gestion de la Información</modulo>
+    <modulo codM="PROG">Programación</modulo>
+    <modulo codM="BBDD">Bases de Datos</modulo>
+    <modulo codM="FOL">Formación y orientación laboral</modulo>
+    <modulo codM="SINF">Sistemas de Información</modulo>
+</modulos>
