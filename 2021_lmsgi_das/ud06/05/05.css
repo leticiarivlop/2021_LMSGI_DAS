@@ -13,3 +13,10 @@ table,td,th{
   border-collapse: collapse;
   width: 100%;
 }
+.cabecera{
+    color: #990000;
+    text-align: left;
+}
+#num{
+    color: blue;
+}

@@ -18,9 +18,6 @@
         <html>
             <head>
                 <title>XSLT 03 David Aparicio Sir</title>
-                <style>
-                    
-
             </head>
             <body>
                 <h1 style="text-align:center">Horarios del curso <xsl:value-of select="@curso"/></h1>
@@ -114,15 +111,15 @@
             <br/>
             
                 
-                    <xsl:value-of select="//asignatura[@codM=current()]/@codProfesor"/>
-                    <abbr>
+            <xsl:value-of select="//asignatura[@codM=current()]/@codProfesor"/>
+            <abbr>
                 <xsl:attribute name="title">
                     <xsl:apply-templates select="//profesores/profesor[contains($listaProfesores,@codP)]"/>
                 </xsl:attribute>
                 <xsl:variable name="listaProfesores" select="//asignatura[@codM=current()]/@codProfesor">
                     <xsl:value-of select="$listaProfesores"/>
                 </xsl:variable>
-                    </abbr>
+            </abbr>
             
         </td>
     </xsl:template>
