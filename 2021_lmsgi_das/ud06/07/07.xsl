@@ -10,7 +10,7 @@
 
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:output method="html"/>
-    <xsl:param name="corregido" select="'si'"/>
+    <xsl:param name="corregido" select="'no'"/>
     <!-- TODO customize transformation rules 
          syntax recommendation http://www.w3.org/TR/xslt 
     -->
@@ -50,7 +50,7 @@
     <xsl:template match="respuestas/respuesta">
         <div class="respuesta">
             
-            <input type="radio">
+            <input type="radio" class="respuestas">
                 <xsl:attribute name="name">
                     <xsl:value-of select="concat('p',../../@id)"/>
                 </xsl:attribute>
