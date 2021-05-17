@@ -18,6 +18,7 @@
         <html>
             <head>
                 <title>David Aparicio Sir</title>
+                <link href="prediccion.css" rel="stylesheet" type="text/css" />
             </head>
             <body>
                 <h1>Predicción por municipios</h1>

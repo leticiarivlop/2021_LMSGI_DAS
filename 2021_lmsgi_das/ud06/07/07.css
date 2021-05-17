@@ -11,6 +11,6 @@ and open the template in the editor.
 .respuesta{
     border: 1px dotted black;
 }
-.respuestas:hover{
+.respuesta:hover{
     background-color: #ADFF2F;
 }

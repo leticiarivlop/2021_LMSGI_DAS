@@ -18,6 +18,7 @@
         <html>
             <head>
                 <title>07.xsl <xsl:value-of select="//nombreModulo"/></title>
+                <link href="07.css" rel="stylesheet" type="text/css" />
             </head>
             <body>
                 <h1>

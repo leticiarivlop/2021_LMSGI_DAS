@@ -1,0 +1,39 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17 may. 2021, 19:42:06
+    Author     : PB
+*/
+
+.min{
+    color: red;
+}
+.max{
+    color: blue;
+}
+caption{
+    text-transform: capitalize;
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+}
+table{
+    border: 1px solid dodgerblue;
+    width: 100%;
+}
+td{
+    border-bottom: 1px solid dodgerblue;
+    color: darkblue;
+    text-align: center;
+}
+th{
+    background-color: skyblue;
+    color: white;
+}
+h1{
+    color: dodgerblue;
+    text-align: center;
+}
