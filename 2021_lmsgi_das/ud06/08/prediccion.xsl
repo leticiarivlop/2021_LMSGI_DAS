@@ -3,7 +3,7 @@
 <!--
     Document   : prediccion.xsl
     Created on : 13 de mayo de 2021, 9:03
-    Author     : daw1
+    Author     : David Aparicio
     Description:
         Purpose of transformation follows.
 -->

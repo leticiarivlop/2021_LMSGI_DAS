@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+    <xs:element name="prediccion" >
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="municipio">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre" type="xs:string" maxOccurs="1"/>
+                            <xs:element name="provincia" type="xs:string" maxOccurs="1"/>
+                        </xs:sequence>
+                        <xs:attribute name="id" use="required">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:positiveInteger">
+                                    <xs:pattern value="[0-9]{5}"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element><!--fin elemento municipio-->
+                <xs:element name="dia"  minOccurs="7" maxOccurs="7">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="prob_precipitacion">
+                                <xs:simpleType>
+                                        <xs:restriction base="xs:integer">
+                                            <xs:minInclusive value="0"/>
+                                            <xs:maxInclusive value="100"/>
+                                        </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="estado_cielo">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="descripcion" type="xs:string"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element><!--fin elemento estado_cielo-->
+                            <xs:element name="viento">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="direccion" type="xs:string"/>
+                                        <xs:element name="velocidad" type="xs:integer"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element><!--fin elemento viento-->
+                            <xs:element name="temperatura">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="maxima">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:integer">
+                                                    <xs:minInclusive value="-100"/>
+                                                    <xs:maxInclusive value="100"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element><!--fin elemento maxima-->
+                                        <xs:element name="minima">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:integer">
+                                                    <xs:minInclusive value="-100"/>
+                                                    <xs:maxInclusive value="100"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element><!--fin elemento minima-->
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element><!--fin elemento temperatura-->
+                        </xs:sequence>
+                        <xs:attribute name="fecha">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:date">
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:attribute>
+                    </xs:complexType>
+                </xs:element><!--fin elemento dia-->
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element><!--fin elemento prediccion-->
+</xs:schema>

@@ -5,35 +5,37 @@ and open the template in the editor.
 */
 /* 
     Created on : 17 may. 2021, 19:42:06
-    Author     : PB
+    Author     : David Aparicio
 */
-
+*{
+    font-family: Arial, sans-serif;
+}
 .min{
-    color: red;
+    color: #f00;
 }
 .max{
-    color: blue;
+    color: #345a8e;
 }
 caption{
-    text-transform: capitalize;
-    background-color: dodgerblue;
+    text-transform: uppercase;
+    background-color: #4f86d9;
     color: white;
     text-align: center;
 }
 table{
-    border: 1px solid dodgerblue;
-    width: 100%;
+    border: 1px solid #4f86d9;
+    width: 75%;
 }
 td{
-    border-bottom: 1px solid dodgerblue;
-    color: darkblue;
+    border-bottom: 1px solid #4f86d9;
+    color: #345a8e;
     text-align: center;
 }
 th{
-    background-color: skyblue;
+    background-color: #95b6e9;
     color: white;
 }
 h1{
-    color: dodgerblue;
+    color: #4f86d9;
     text-align: center;
 }

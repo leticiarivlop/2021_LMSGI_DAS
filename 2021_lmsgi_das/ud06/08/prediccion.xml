@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-15" ?>
-<prediccion>
+<!DOCTYPE prediccion SYSTEM "prediccion.dtd">
+<prediccion
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation='prediccion.xsd'>
 	<municipio id="49600">
 		<nombre>Benavente</nombre>
 		<provincia>Zamora</provincia>

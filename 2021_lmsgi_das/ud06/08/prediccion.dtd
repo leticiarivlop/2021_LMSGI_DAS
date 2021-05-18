@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<!--
+    TODO define vocabulary identification
+    PUBLIC ID: -//vendor//vocabulary//EN
+    SYSTEM ID: http://server/path/prediccion.dtd
+
+-->
+
+<!--
+    An example how to use this DTD from your XML document:
+
+    <?xml version="1.0"?>
+
+    <!DOCTYPE prediccion SYSTEM "prediccion.dtd">
+
+    <prediccion>
+    ...
+    </prediccion>
+-->
+
+<!--- Put your DTDDoc comment here. -->
+<!ELEMENT prediccion (municipio,dia+)>
+<!ATTLIST prediccion
+    xsi:noNamespaceSchemaLocation CDATA #IMPLIED
+    xmlns:xsi CDATA #IMPLIED
+  >
+
+<!ELEMENT municipio (nombre|provincia)*>
+<!ATTLIST municipio
+    id CDATA #REQUIRED
+  >
+
+<!ELEMENT nombre (#PCDATA)>
+
+<!ELEMENT provincia (#PCDATA)>
+
+<!ELEMENT dia (prob_precipitacion,estado_cielo,viento,temperatura)>
+<!ATTLIST dia
+    fecha CDATA #REQUIRED
+  >
+<!ELEMENT prob_precipitacion (#PCDATA)>
+<!ELEMENT estado_cielo (#PCDATA)>
+<!ATTLIST estado_cielo
+    descripcion CDATA #REQUIRED
+  >
+<!ELEMENT viento (direccion,velocidad)*>
+<!ELEMENT direccion (#PCDATA)>
+<!ELEMENT velocidad (#PCDATA)>
+<!ELEMENT temperatura (maxima,minima)*>
+<!ELEMENT maxima (#PCDATA)>
+<!ELEMENT minima (#PCDATA)>
