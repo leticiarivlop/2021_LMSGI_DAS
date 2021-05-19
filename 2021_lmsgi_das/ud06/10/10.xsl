@@ -15,33 +15,11 @@
          syntax recommendation http://www.w3.org/TR/xslt 
     -->
     <xsl:template match="/network">
-       <xsl:value-of select="concat(name(),':')"/>
-       <xsl:apply-templates select="ethernets"/>
-    </xsl:template>
-    <xsl:template match="ethernets">
         <xsl:value-of select="concat(name(),':')"/>
-        <xsl:apply-templates select="ethernets/name"/>
+        <xsl:for-each select="//ethernets">
+              <xsl:value-of select="concat(name(),':')"/>
+            <xsl:value-of select="concat(name,':')"/>
+        </xsl:for-each>
     </xsl:template>
-    <xsl:template match="ethernets/name">
-        <xsl:value-of select="ethernets/name"/>
-        <xsl:apply-templates select="ethernets/addresses"/>
-    </xsl:template>
-    <xsl:template match="ethernets/addresses">
-        <xsl:value-of select="concat(name(),':')"/>
-        <xsl:value-of select="ethernet/addresses"/>
-        <xsl:apply-templates select="ethernets/gateway4"/>
-    </xsl:template>
-    <xsl:template match="ethernets/gateway4">
-        <xsl:value-of select="concat(name(),':')"/>
-        <xsl:value-of select="."/>
-        <xsl:apply-templates select="nameservers/addresses"/>
-    </xsl:template>
-    <xsl:template match="//nameservers/addresses">
-        <xsl:value-of select="."/>
-        <xsl:apply-templates select="//version"/>
-    </xsl:template>
-    <xsl:template match="//version">
-        <xsl:value-of select="concat(name(),':')"/>
-        <xsl:value-of select="."/>
-    </xsl:template>
+
 </xsl:stylesheet>
