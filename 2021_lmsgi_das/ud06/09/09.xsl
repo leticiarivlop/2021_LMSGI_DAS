@@ -20,8 +20,9 @@
             <head>
                 
                 <xsl:call-template name="web">
-                    <xsl:with-param name="titulo" select="'David Aparicio Sir'"/>
+                    <xsl:with-param name="titulo" select="concat('09 XSLT ',/universidad/nombre)"/>
                     <xsl:with-param name="descripcion" select="'Programa de la universidad Victoria'"/>
+                    <xsl:with-param name="css" select="'09.css'"/>
                 </xsl:call-template>
             </head>
             <body>
@@ -49,15 +50,19 @@
             </body>
         </html>
     </xsl:template>
-    <xsl:template match="//asignatura">
+    <xsl:template match="asignatura">
+       <xsl:if test="count(//alumnos/alumno[estudios/asignaturas/asignatura/@codigo=current()/@id])!=0">
         <li>
-            <xsl:value-of select="concat('(',@id,')',nombre)"/>
+            <xsl:value-of select="concat('(',@id,') ',nombre)"/>
+            <xsl:if test="count(//alumnos/alumno[estudios/asignaturas/asignatura/@codigo=current()/@id])!=0">
             <ol>
-                <xsl:apply-templates select="//alumnos/alumno[estudios/asignaturas/asignatura/@codigo=(current()/@id)]">
+                <xsl:apply-templates select="//alumnos/alumno[estudios/asignaturas/asignatura/@codigo=current()/@id]">
                     <xsl:sort select="apellido1"/>
                 </xsl:apply-templates>
             </ol>
+            </xsl:if>
         </li>
+        </xsl:if>
     </xsl:template>
     <xsl:template match="alumno">
         <li>

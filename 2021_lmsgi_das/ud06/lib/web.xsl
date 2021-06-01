@@ -17,6 +17,7 @@
  <xsl:template name="web">
      <xsl:param name="titulo"/>
      <xsl:param name="descripcion"/>
+     <xsl:param name="css"/>
         <meta name="author" content="David Aparicio Sir"/>  
         <meta name="application-name" content="Web de Lenguaje de Marcas"/>
         <meta name="description">
@@ -27,7 +28,11 @@
         <meta name="keywords" content="lmsgi,,xsd,dtd,xslt,xml"/>  
         <meta name="robots" content="index, follow"/>
         <link  rel="icon"  href="../../ud02/images/favicon.ico" type="image/png" />
-        <link rel="stylesheet" href="css" type="text/css" />
+        <link rel="stylesheet" type="text/css" >
+            <xsl:attribute name="href">
+                <xsl:value-of select="$css"/>
+            </xsl:attribute>
+        </link>
         <title><xsl:value-of select="$titulo"/></title>
     </xsl:template>
      <xsl:template name="docTipo">
